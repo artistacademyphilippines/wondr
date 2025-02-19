@@ -1,0 +1,446 @@
+.txtBlur {
+    width: 28px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtBlur:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtBlur:focus {
+    border-bottom: 1px solid #647499;
+}
+
+.txtBrightness {
+    width: 28px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtBrightness:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtBrightness:focus {
+    border-bottom: 1px solid #647499;
+}
+
+.txtContrast {
+    width: 28px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtContrast:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtContrast:focus {
+    border-bottom: 1px solid #647499;
+}
+
+.txtSaturation {
+    width: 28px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtSaturation:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtSaturation:focus {
+    border-bottom: 1px solid #647499;
+}
+
+.txtTemperature {
+    width: 28px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtTemperature:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtTemperature:focus {
+    border-bottom: 1px solid #647499;
+}
+
+
+
+.tabOutlineLayer {
+    display: none;
+}
+
+.txtOutlineColor {
+    width: 56px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border-radius: 3px;
+    border: 1px solid #343C4F;
+    background-color: transparent;
+    transition: border .2s;
+}
+
+.txtOutlineColor:hover {
+    border: 1px solid #515E7B;
+}
+
+.txtOutlineColor:focus {
+    border: 1px solid #515E7B;
+}
+
+.txtOutlineOpacity {
+    width: 28px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtOutlineOpacity:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtOutlineOpacity:focus {
+    border-bottom: 1px solid #647499;
+}
+
+.txtOutlineSize {
+    width: 28px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtOutlineSize:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtOutlineSize:focus {
+    border-bottom: 1px solid #647499;
+}
+
+.tabGlowLayer {
+    display: none;
+}
+
+.txtGlowColor {
+    width: 56px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border-radius: 3px;
+    border: 1px solid #343C4F;
+    background-color: transparent;
+    transition: border .2s;
+}
+
+.txtGlowColor:hover {
+    border: 1px solid #515E7B;
+}
+
+.txtGlowColor:focus {
+    border: 1px solid #515E7B;
+}
+
+
+
+.txtGlowOpacity {
+    width: 28px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtGlowOpacity:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtGlowOpacity:focus {
+    border-bottom: 1px solid #647499;
+}
+
+.txtGlowSize {
+    width: 28px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtGlowSize:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtGlowSize:focus {
+    border-bottom: 1px solid #647499;
+}
+
+.txtGlowSpread {
+    width: 28px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtGlowSpread:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtGlowSpread:focus {
+    border-bottom: 1px solid #647499;
+}
+
+.tabShadowLayer {
+    display: none;
+}
+
+.txtShadowColor {
+    width: 56px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border-radius: 3px;
+    border: 1px solid #343C4F;
+    background-color: transparent;
+    transition: border .2s;
+}
+
+.txtShadowColor:hover {
+    border: 1px solid #515E7B;
+}
+
+.txtShadowColor:focus {
+    border: 1px solid #515E7B;
+}
+
+
+
+
+.txtShadowOpacity {
+    width: 28px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtShadowOpacity:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtShadowOpacity:focus {
+    border-bottom: 1px solid #647499;
+}
+
+.txtShadowSize {
+    width: 28px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtShadowSize:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtShadowSize:focus {
+    border-bottom: 1px solid #647499;
+}
+
+.txtShadowSpread {
+    width: 28px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtShadowSpread:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtShadowSpread:focus {
+    border-bottom: 1px solid #647499;
+}
+
+.txtShadowRotation {
+    width: 28px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtShadowRotation:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtShadowRotation:focus {
+    border-bottom: 1px solid #647499;
+}

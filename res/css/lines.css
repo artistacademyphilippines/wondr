@@ -1,0 +1,355 @@
+#pnlBoxLine {
+    width: 100%;
+    min-width: 100%;
+    height: 470px;
+    margin: auto;
+    border-radius: 9px;
+    overflow: hidden;
+    transition: .1s;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.dropdownLineStart {
+    width: 100%;
+    height: 32px;
+    margin-top: 3px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    transition: .2s;
+    border-radius: 4px;
+    border: 1px solid #515E7B;
+}
+
+.dropdownLineStart:hover {
+    border: 1px solid #647499;
+}
+
+.dropdownLineEnd {
+    width: 100%;
+    height: 32px;
+    margin-top: 3px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    transition: .2s;
+    border-radius: 4px;
+    border: 1px solid #515E7B;
+}
+
+.dropdownLineEnd:hover {
+    border: 1px solid #647499;
+}
+
+.chosenLineStart {
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.chosenLineEnd {
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    transform: scale(-1,1);
+}
+
+.chosenLineEnd svg {
+    translate: -18px;
+}
+
+.dropdownLineStart svg{
+    width: 8px;
+    height: 6px;
+    margin: auto;
+}
+
+.dropdownLineEnd svg{
+    width: 8px;
+    height: 6px;
+    margin: auto;
+}
+
+.dropOptionLineStart {
+    z-index: 5;
+    width: 90px;
+    height: auto;
+    max-height: 156px;
+    border-radius: 6px;
+    background-color: #1E222B;
+    display: none;
+    cursor: default;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    padding-top: .4em;
+    padding-bottom: .4em;
+    scroll-behavior: smooth;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.dropOptionLineStart::-webkit-scrollbar {
+    width: 1px;
+}
+
+.dropOptionLineStart::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.dropOptionLineStart::-webkit-scrollbar-thumb {
+    background-color: #6885CC;
+    border-radius: 99px;
+}
+
+.dropOptionLineStart::-webkit-scrollbar-thumb:hover {
+    background-color: #6885CC;
+}
+
+.dropOptionLineStart::-webkit-scrollbar-corner { 
+    background: transparent; 
+}
+
+.dropOptionLineEnd {
+    z-index: 5;
+    width: 90px;
+    height: auto;
+    max-height: 156px;
+    border-radius: 6px;
+    background-color: #1E222B;
+    display: none;
+    cursor: default;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    padding-top: .4em;
+    padding-bottom: .4em;
+    scroll-behavior: smooth;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.dropOptionLineEnd::-webkit-scrollbar {
+    width: 1px;
+}
+
+.dropOptionLineEnd::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.dropOptionLineEnd::-webkit-scrollbar-thumb {
+    background-color: #6885CC;
+    border-radius: 99px;
+}
+
+.dropOptionLineEnd::-webkit-scrollbar-thumb:hover {
+    background-color: #6885CC;
+}
+
+.dropOptionLineEnd::-webkit-scrollbar-corner { 
+    background: transparent; 
+}
+
+.optLineHead {
+    width: 100%;
+    height: 32px;
+    display: flex;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none; 
+    background-color: transparent;
+}
+
+.optLineHead:hover {
+    background-color: #6885CC;
+}
+
+.optLineHead svg {
+    width: 40%;
+    height: auto;
+}
+
+
+.txtLineStrokeColor {
+    width: 56px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border-radius: 3px;
+    border: 1px solid #343C4F;
+    background-color: transparent;
+    transition: border .2s;
+}
+
+.txtLineStrokeColor:hover {
+    border: 1px solid #515E7B;
+}
+
+.txtLineStrokeColor:focus {
+    border: 1px solid #515E7B;
+}
+
+.txtLineStrokeWidth {
+    width: 28px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtLineStrokeWidth:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtLineStrokeWidth:focus {
+    border-bottom: 1px solid #647499;
+}
+
+.txtLineStrokeDash {
+    width: 28px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtLineStrokeDash:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtLineStrokeDash:focus {
+    border-bottom: 1px solid #647499;
+}
+
+.txtLineStrokeGap {
+    width: 28px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtLineStrokeGap:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtLineStrokeGap:focus {
+    border-bottom: 1px solid #647499;
+}
+
+.chkLineStrokeCap {
+    outline: none;
+    width: 24px;
+    max-width: 24px;
+    height: 16px;
+    border-radius: 99px;
+    border: 1px solid #3F4961;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 8px;
+    cursor: pointer;
+    display: flex;
+    padding-left: 2px;
+    padding-right: 2px;
+    transition: .2s;
+}
+
+
+.divLineStart {
+    display: flex;
+    height: 100%;
+    display: none;
+    position: relative;
+}
+
+.divLineStart svg {
+    width: 100%;
+    height: auto;
+}
+
+.divLineStart div {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.divLineMid {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.divLineMid svg {
+    width: 100%;
+    height: auto;
+}
+
+.divLineEnd {
+    display: flex;
+    height: 100%;
+    display: none;
+    position: relative;
+}
+
+.divLineEnd div {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    transform: scale(-1,1);
+}
+
+.divLineEnd svg {
+    width: 100%;
+    height: auto;
+    transform: scale(-1,1);
+}

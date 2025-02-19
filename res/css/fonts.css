@@ -1,0 +1,1011 @@
+
+#pnlBoxText {
+    width: 100%;
+    height: 470px;
+    margin: auto;
+    background-color: transparent;
+    overflow: hidden;
+    transition: .1s;
+    display: flex;
+    flex-direction: column;
+}
+
+#breaklineTrackFonts {
+    background-color: #3F4961;
+    width: 88%;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .5em;
+}
+
+#breaklineThumbFonts {
+    background-color: #6885CC;
+    width: 33%;
+    height: 1px;
+    translate: 0%;
+    transition: .2s;
+}
+
+#fontCategory {
+    display: flex;
+    height: 40px;
+    width: 88%;
+    margin: auto;
+    margin-bottom: 1em;
+    justify-content: space-between;
+}
+
+.fontSelect {
+    width: 30%;
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    border-radius: 6px;
+    /*
+    border: 1px solid #363F52;
+    */
+}
+
+.fontSelect svg {
+    margin: auto;
+    width: 45%;
+    height: 45%;
+}
+
+#tabFontCategory {
+    width: 264px;
+    overflow: hidden;
+}
+
+#tabSliderFont {
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    transition: .2s;
+    outline: none;
+    border: none;
+}
+
+#tabStylish {
+    width: 264px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    outline: none;
+    border: none;
+}
+
+#tabStylish::-webkit-scrollbar {
+    width: 4px;
+    height: 2px;
+}
+
+#tabStylish::-webkit-scrollbar-track {
+    border-radius: 99px;
+}
+
+#tabStylish::-webkit-scrollbar-thumb {
+    background-color: #515E7B;
+    border-radius: 99px;
+}
+  
+#tabStylish::-webkit-scrollbar-thumb:hover {
+    background-color: #647499;
+}
+
+#tabStylish::-webkit-scrollbar-corner { 
+    background: transparent; 
+}
+
+#tabSansSerif {
+    width: 264px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: auto;
+    outline: none;
+    border: none;
+}
+
+#tabSansSerif::-webkit-scrollbar {
+    width: 4px;
+    height: 2px;
+}
+
+#tabSansSerif::-webkit-scrollbar-track {
+    border-radius: 99px;
+}
+
+#tabSansSerif::-webkit-scrollbar-thumb {
+    background-color: #515E7B;
+    border-radius: 99px;
+}
+  
+#tabSansSerif::-webkit-scrollbar-thumb:hover {
+    background-color: #647499;
+}
+
+#tabSansSerif::-webkit-scrollbar-corner { 
+    background: transparent; 
+}
+
+#tabSerif {
+    width: 264px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: auto;
+    outline: none;
+    border: none;
+}
+
+#tabSerif::-webkit-scrollbar {
+    width: 4px;
+    height: 2px;
+}
+
+#tabSerif::-webkit-scrollbar-track {
+    border-radius: 99px;
+}
+
+#tabSerif::-webkit-scrollbar-thumb {
+    background-color: #515E7B;
+    border-radius: 99px;
+}
+  
+#tabSerif::-webkit-scrollbar-thumb:hover {
+    background-color: #647499;
+}
+
+#tabSerif::-webkit-scrollbar-corner { 
+    background: transparent; 
+}
+
+.wrapFonts {
+    width: 246px;
+    height: 50px;
+    margin-right: auto;
+    border-radius: 9px;
+    background-color: #3C465C;
+    background-color: #242833;
+    border: 1px solid transparent;
+    overflow: hidden;
+    margin-top: .5em;
+    margin-bottom: 1em;
+    display: flex;
+    transition: .1s;
+}
+
+.wrapFonts h2 {
+    color: #9DAFDB;
+    margin: auto;
+    margin-left: 1em;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: none;
+}
+
+.pnlBoxStylish {
+    width: 246px;
+    height: 50px;
+    margin-right: auto;
+    border-radius: 9px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    overflow: hidden;
+    margin-bottom: 1em;
+    margin-top: .5em;
+    display: flex;
+    /*transition: .2s;*/
+}
+
+.pnlBoxStylish h2 {
+    color: #9DAFDB;
+    margin: auto;
+    margin-left: 1em;
+    font-weight: 400;
+    font-size: 16px;
+    /*transition: .2s;*/
+    letter-spacing: 1px;
+}
+
+.pnlBoxSansSerif {
+    width: 246px;
+    height: 50px;
+    margin-right: auto;
+    border-radius: 9px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    overflow: hidden;
+    margin-bottom: .5em;
+    margin-top: .5em;
+    display: flex;
+    /*transition: .2s;*/
+}
+
+.pnlBoxSansSerif h2 {
+    color: #9DAFDB;
+    margin: auto;
+    margin-left: 1em;
+    font-weight: 400;
+    font-size: 16px;
+    /*transition: .2s;*/
+    letter-spacing: 1px;
+}
+
+.pnlBoxSerif {
+    width: 246px;
+    height: 50px;
+    margin-right: auto;
+    border-radius: 9px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    overflow: hidden;
+    margin-bottom: .5em;
+    margin-top: .5em;
+    display: flex;
+    /*transition: .2s;*/
+}
+
+.pnlBoxSerif h2 {
+    color: #9DAFDB;
+    margin: auto;
+    margin-left: 1em;
+    font-weight: 400;
+    font-size: 16px;
+    /*transition: .2s;*/
+    letter-spacing: 1px;
+}
+
+.fontPopular {
+    width: 240px;
+    min-width: 240px;
+    height: 40px;
+    margin-bottom: .5em;
+    display: flex;
+}
+
+.fontPopular h2{
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 13px;
+}
+
+.fontResults {
+    width: 240px;
+    min-width: 240px;
+    height: 40px;
+    margin-top: 1em;
+    margin-bottom: .5em;
+    display: flex;
+}
+
+.fontResults h2{
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 13px;
+}
+
+.textArea {
+    color: #949EFF;
+    white-space: nowrap;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: default;
+    text-transform: uppercase;
+}
+
+.textDisplay {
+    width: auto;
+    height: auto;
+    position: absolute;
+    color: black;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.contText {
+    width: 240px;
+    min-width: 240px;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.textTitle {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    cursor: default;
+    margin-top: .5em;
+}
+
+.textTitle h2 {
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 600px;
+    cursor: default;
+}
+
+.optFonts {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none; 
+    background-color: transparent;
+}
+
+.optFonts:hover {
+    background-color: #6885CC;
+}
+
+.optResults {
+    width: 100%;
+    height: 32px;
+    display: flex;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    align-items: center;
+    justify-content: center;
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none; 
+    background-color: transparent;
+}
+
+.selTextCase {
+    height: 40px;
+    width: 42%;
+    display: flex;
+}
+
+.selTextResize {
+    height: 40px;
+    width: 42%;
+    display: flex;
+}
+
+.selTextHori {
+    height: 40px;
+    width: 42%;
+    display: flex;
+}
+
+.selTextVerti {
+    height: 40px;
+    width: 42%;
+    display: flex;
+}
+
+.selTextDecor {
+    height: 40px;
+    width: 42%;
+    display: flex;
+}
+
+/* ========================TEXT EDITOR======================*/
+#pnlBoxTextEditor {
+
+    width: 100%;
+    height: 230px;
+    background-color: transparent;
+    overflow: hidden;
+    transition: .1s;
+    display: flex;
+    flex-direction: column;
+}
+
+#pnlBoxEmojiSymbol {
+    width: 100%;
+    height: 230px;
+    margin-top: calc(1em + 10px);
+    background-color: transparent;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.txtEditorBox {
+    color: white;
+    outline: none;
+    border: none;
+    resize: none;
+    white-space: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    overflow: visible;
+    background-color: #3A4459;
+    background-color: transparent;
+    padding: 8px;
+    width: 246px;
+    height: 76px;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border: 1px solid #343C4F;
+    transition: .2s;
+    cursor: default;
+}
+
+
+.txtEditorBox::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+.txtEditorBox::-webkit-scrollbar-track {
+    border-radius: 99px;
+}
+
+.txtEditorBox::-webkit-scrollbar-thumb {
+    background-color: #515E7B;
+    border-radius: 99px;
+}
+  
+.txtEditorBox::-webkit-scrollbar-thumb:hover {
+    background-color: #647499;
+}
+
+.txtEditorBox::-webkit-scrollbar-corner { 
+    background: transparent; 
+}
+
+.txtEditorBox::placeholder {
+    color: rgba(200,220,240, 0.5);
+    font-weight: 400;
+    opacity: 1; /* Firefox */
+}
+  
+.txtEditorBox::-ms-input-placeholder { /* Edge 12 -18 */
+    color: white;
+    font-weight: 400;
+}
+
+.txtEditorBox:hover {
+    border: 1px solid #515E7B;
+}
+
+.txtEditorBox:focus {
+    border: 1px solid #647499;
+}
+
+#btnSaveEdit {
+    width: 224px;
+    height: 40px;
+    border-radius: 6px;
+    display: flex;
+    background-color: #7595E5;
+    transition: .2s;
+    padding-right: 40px;
+}
+
+#btnSaveEdit:hover {
+    /*background: linear-gradient(#6885CC 1%, #6885CC 2%, #6885CC 100%);*/
+    background-color: #82A6FF;
+}
+
+
+#btnSaveEdit h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+    margin: auto;
+    letter-spacing: 1px;
+}
+
+#tabSliderBoxText {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    transition: .2s;
+    height: 98px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.tabEmojisBox {
+    height: 100%;
+    width: 264px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabSymbolsBox {
+    height: 100%;
+    width: 264px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contEmoji {
+    width: 264px;
+    height: 96px;
+    margin: auto;
+    margin-top: 0px;
+    overflow: hidden;
+    padding-bottom: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: normal;
+}
+
+#contEmoji::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+#contEmoji::-webkit-scrollbar-track {
+    border-radius: 99px;
+}
+
+#contEmoji::-webkit-scrollbar-thumb {
+    background-color: #515E7B;
+    border-radius: 99px;
+}
+  
+#contEmoji::-webkit-scrollbar-thumb:hover {
+    background-color: #647499;
+}
+
+#contEmoji::-webkit-scrollbar-corner { 
+    background: transparent; 
+}
+
+.emojiTitle {
+    width: 100%;
+    height: 28px;
+    display: flex;
+}
+
+.emojiTitle h2 {
+    color: rgba(200,220,240, 0.5);
+    margin: auto;
+    margin-left: 0px;
+    font-size: 12px;
+    font-weight: 600px;
+    cursor: default;
+}
+
+.wrapEmoji {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: auto;
+}
+
+
+.searchBoxEmojis {
+    height: 40px;
+    width: 262px;
+    display: flex;
+    border-radius: 999px;
+    /*
+    background-color: #3A4459;
+    */
+    border: 1px solid #343C4F;
+    transition: .2s;
+}
+
+.searchBoxEmojis:hover {
+    border: 1px solid #515E7B;
+}
+
+.searchBoxEmojis:focus-within {
+    border: 1px solid #647499;
+}
+
+.searchBoxIcon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    display: flex;
+}
+
+.searchBoxIcon svg {
+    margin: auto;
+}
+
+.txtSearchEmojiSymbol {
+    height: 38px;
+    width: 180px;
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+    outline: none;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: default;
+}
+
+.txtSearchEmojiSymbol::placeholder {
+    color: rgba(200,220,240, 0.5);
+    font-weight: 400;
+    opacity: 1; /* Firefox */
+}
+
+.clickEmoji {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    background-color: transparent;
+    display: flex;
+    padding-bottom: 2px;
+}
+
+.clickEmoji:hover {
+    background-color: #6885CC;
+}
+
+.clickEmoji h2 {
+    margin: auto;
+    font-size: 18px;
+}
+
+#btnDelEmoji {
+    width: 32px;
+    height: 24px;   
+    display: flex;
+    margin: auto;
+    border-radius: 6px;
+    visibility: hidden;
+    /*
+    background-color: #343C4F; */
+    
+    border: 1px solid rgba(200,220,240, 0.4); 
+}
+
+#btnDelEmoji h2 {
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin: auto;
+    font-weight: 400;
+}
+
+#contSymbol {
+    width: 264px;
+    height: 96px;
+    margin: auto;
+    margin-top: 0px;
+    overflow: hidden;
+    padding-bottom: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: normal;
+}
+
+#contSymbol::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+#contSymbol::-webkit-scrollbar-track {
+    border-radius: 99px;
+}
+
+#contSymbol::-webkit-scrollbar-thumb {
+    background-color: #515E7B;
+    border-radius: 99px;
+}
+  
+#contSymbol::-webkit-scrollbar-thumb:hover {
+    background-color: #647499;
+}
+
+#contSymbol::-webkit-scrollbar-corner { 
+    background: transparent; 
+}
+
+.symbolTitle {
+    width: 100%;
+    height: 28px;
+    display: flex;
+}
+
+.symbolTitle h2 {
+    color: rgba(200,220,240, 0.5);
+    margin: auto;
+    margin-left: 0px;
+    font-size: 12px;
+    font-weight: 600px;
+    cursor: default;
+}
+
+.wrapSymbol {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: auto;
+}
+
+.clickSymbol {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    background-color: transparent;
+    display: flex;
+    padding-bottom: 2px;
+}
+
+.clickSymbol:hover {
+    background-color: #6885CC;
+}
+
+.clickSymbol h2 {
+    margin: auto;
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+}
+
+.btnNone {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    border-radius: 3px;
+}
+
+.btnNone div {
+    width: 8px;
+    height: 2px;
+    margin: auto;
+    background-color: #647499;
+}
+
+.btnUpperCase {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 3px;
+}
+
+
+.btnUpperCase h2 {
+    margin: auto;
+    color: #647499;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.btnLowerCase {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 3px;
+}
+
+
+.btnLowerCase h2 {
+    margin: auto;
+    color: #647499;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.btnAlignLeft {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 3px;
+}
+
+.btnAlignLeft svg {
+    margin: auto;
+    transition: .2s;
+}
+
+.btnAlignCenter {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    margin: auto;
+    border-radius: 3px;
+}
+
+.btnAlignCenter svg {
+    margin: auto;
+    transition: .2s;
+}
+
+.btnAlignRight {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 3px;
+}
+
+.btnAlignRight svg {
+    margin: auto;
+    transition: .2s;
+}
+
+
+.btnAlignTop {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 3px;
+}
+
+.btnAlignTop svg {
+    margin: auto;
+    transition: .2s;
+}
+
+.btnAlignMiddle {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    margin: auto;
+    border-radius: 3px;
+}
+
+.btnAlignMiddle svg {
+    margin: auto;
+    transition: .2s;
+}
+
+.btnAlignBottom {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 3px;
+}
+
+.btnAlignBottom svg {
+    margin: auto;
+    transition: .2s;
+}
+
+.btnLineSpacing svg {
+    margin: auto;
+    transition: .2s;
+    filter: saturate(0) brightness(2);
+}
+
+.btnAutoWidth {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    border-radius: 3px;
+}
+
+.btnAutoWidth svg {
+    margin: auto;
+}
+
+.btnAutoHeight {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    margin: auto;
+    border-radius: 3px;
+}
+
+.btnAutoHeight svg {
+    margin: auto;
+}
+
+.btnFixedSize {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    border-radius: 3px;
+}
+
+.btnFixedSize svg {
+    margin: auto;
+}
+
+.btnNoDecor {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    border-radius: 3px;
+}
+
+.btnNoDecor div {
+    width: 8px;
+    height: 2px;
+    margin: auto;
+    background-color: #647499;
+}
+
+.btnUnderline {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    margin: auto;
+    border-radius: 3px;
+}
+
+.btnUnderline h2 {
+    margin: auto;
+    color: #647499;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    text-decoration: underline;
+}
+
+.btnStrike {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    border-radius: 3px;
+}
+
+.btnStrike h2 {
+    margin: auto;
+    color: #647499;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    text-decoration: line-through;
+}

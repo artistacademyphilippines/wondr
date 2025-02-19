@@ -1,0 +1,924 @@
+/*borders*/
+
+#cnvPin {
+    overflow: hidden;
+    position: absolute;
+    left: 0px !important;
+    top: 0px !important;
+    cursor: default;
+}
+
+#selectPin {
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+    border: 2px dotted #6885CC;
+    position: absolute;
+    /*
+    background-color: rgba(0,0,150,.05); */
+}
+
+.pinBody {
+    display: grid;
+    position: absolute;
+}
+
+.pinL {
+    width: 8px;
+    height: 100%;
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    left: calc(0% - 4px);
+}
+
+.pinL2 {
+    width: 1px;
+    height: 100%;
+    margin: auto;
+    background-color: #6885CC;
+}
+
+.pinTL {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    position: absolute;
+    border-radius: 0px;
+    top: calc(0% - 15px);
+    left: calc(0% - 14px);
+    transition: .2s;
+}
+
+.pinTL2 {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border: 1px solid #6885CC;
+    margin-left: auto;
+    margin-top: auto;
+    position: relative;
+}
+
+.pinT {
+    width: 100%;
+    height: 8px;
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    top: calc(0% - 4px);
+}
+
+.pinT2 {
+    height: 1px;
+    width: 100%;
+    margin: auto;
+    background-color: #6885CC;
+}
+
+.pinTR {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    position: absolute;
+    border-radius: 0px;
+    top: calc(0% - 15px);
+    left: calc(100% - 5px);
+    transition: .2s;
+}
+
+.pinTR2 {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border: 1px solid #6885CC;
+    margin-right: auto;
+    margin-top: auto;
+    position: relative;
+}
+
+.pinR {
+    width: 8px;
+    height: 100%;
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    left: calc(100% - 4px);
+}
+
+.pinR2 {
+    width: 1px;
+    height: 100%;
+    margin: auto;
+    background-color: #6885CC;
+}
+
+.pinBR {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    position: absolute;
+    border-radius: 0px;
+    top: calc(100% - 5px);
+    left: calc(100% - 5px);
+    transition: .2s;
+}
+
+.pinBR2 {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border: 1px solid #6885CC;
+    margin-right: auto;
+    margin-bottom: auto;
+    position: relative;
+}
+
+.pinB {
+    width: 100%;
+    height: 8px;
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    top: calc(100% - 4px);
+}
+
+.pinB2 {
+    height: 1px;
+    width: 100%;
+    margin: auto;
+    background-color: #6885CC;
+}
+
+.pinBL {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    position: absolute;
+    border-radius: 0px;
+    top: calc(100% - 5px);
+    left: calc(0% - 14px);
+    transition: .2s;
+}
+
+.pinBL2 {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #6885CC;
+    margin-left: auto;
+    margin-bottom: auto;
+    position: relative;
+}
+
+.cnvLayers {
+    position: absolute;
+    visibility: visible;
+    display: flex;
+}
+
+.cnvLayers svg {
+    position: absolute;
+}
+
+.cnvLayersBorder {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.cnvLayers img {
+    width: 100%;
+    height: 100%;
+    cursor: default;
+    object-fit: cover;
+    image-rendering: high-quality;
+    position: absolute;
+    min-width: 5px !important;
+    min-height: 5px !important;
+}
+
+
+
+.cnvOutline {
+    position: absolute;
+}
+
+#pnlBoxImage {
+
+    width: 100%;
+    height: 470px;
+    margin: auto;
+    border-radius: 9px;
+    background-color: #343C4F;
+    background-color: transparent;
+    overflow: hidden;
+    transition: .1s;
+    display: flex;
+    flex-direction: column;
+}
+
+#pnlBoxVector {
+
+    width: 100%;
+    height: 470px;
+    margin: auto;
+    border-radius: 9px;
+    background-color: #343C4F;
+    background-color: transparent;
+    overflow: hidden;
+    transition: .1s;
+    display: flex;
+    flex-direction: column;
+}
+
+.pnlBoxLayer {
+    width: 246px;
+    min-width: 246px;
+    height: 40px;
+    margin-right: auto;
+    border-radius: 6px;
+    background-color: #343C4F;
+    background-color: transparent;
+    border: 1px solid #3F4961;
+    overflow: hidden;
+    transition: .1s;
+    margin-bottom: .5em;
+}
+
+.pnlTitleLayer {
+
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-color: #6885CC;
+    background-color: transparent;
+    
+}
+
+
+.btnExpandCollapseLayer {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 12px;
+    cursor: pointer;
+    rotate: 0deg;
+    transition: .2s;
+}
+
+.btnExpandCollapseLayer svg {
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+.txtHeaderLayer {
+    margin: auto;
+    width: 80px;
+    height: 24px;
+    outline: none;
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+    margin: auto;
+    text-align: center;
+    cursor: default;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    transition: .2s;
+    background-color: transparent;
+}
+
+.btnShowHideLayer {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.btnShowHideLayer svg {
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+.optLayerBlend {
+    width: 100%;
+    height: 32px;
+    height: 40px;
+    display: flex;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none; 
+    background-color: transparent;
+}
+
+.optLayerBlend:hover {
+    background-color: #6885CC;
+}
+
+.optTextWeight {
+    width: 100%;
+    height: 32px;
+    height: 40px;
+    display: flex;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none; 
+    background-color: transparent;
+}
+
+.optTextWeight:hover {
+    background-color: #6885CC;
+}
+
+.optLayerStyle {
+    width: 100%;
+    height: 32px;
+    height: 40px;
+    display: flex;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none; 
+    background-color: transparent;
+}
+
+.optLayerStyle:hover {
+    background-color: #6885CC;
+}
+
+.contentImages {
+    width: 214px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1em;
+    overflow: hidden;
+}
+
+.contentVector {
+    width: 214px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1em;
+    overflow: hidden;
+}
+
+.pnlEntryFold {
+    display: flex;
+    width: 210px;
+    width: 100%;
+    height: 40px;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.pnlEntryFold h2 {
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.pnlEntrySide {
+    height: 40px;
+    width: 42%;
+    width: 34%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pnlEntrySide svg {
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: .2s;
+    filter: saturate(0) brightness(2);
+}
+
+.tabSliderLayer {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    transition: .2s;
+}
+
+.tabBasicLayer {
+    height: auto;
+    width: 214px;
+    width: 264px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pnlDropLayer {
+    width: 210px;
+    height: 40px;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pnlBottomLayerTrack {
+    background-color: #3F4961;
+    width: 90%;
+    height: 1px;
+    margin: auto;
+    top: 400px;
+}
+
+.pnlBottomLayerThumb {
+    background-color: #6885CC;
+    width: 33%;
+    height: 1px;
+    translate: 0%;
+    transition: .2s;
+}
+
+.pnlBottomLayerThumb2 {
+    background-color: #6885CC;
+    width: 50%;
+    height: 1px;
+    translate: 0%;
+    transition: .2s;
+}
+
+.pnlBottomLayer {
+    display: flex;
+    width: 90%;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #343C4F; 
+    top: 400px;
+}
+
+.pnlBottomLayer h2:hover {
+    color: #99B7FF;
+}
+
+.frBottom {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.frBottom div {
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+}
+
+.frBottom div:hover svg {
+    filter: saturate(1) brightness(1.5);
+}
+
+.frBottom div svg{
+    margin: auto;
+}
+
+.txtMiniLayer {
+    width: 28px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtMiniLayer:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtMiniLayer:focus {
+    border-bottom: 1px solid #647499;
+}
+
+.txtRotationLayer {
+    width: 28px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtRotationLayer:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtRotationLayer:focus {
+    border-bottom: 1px solid #647499;
+}
+
+.txtOpacityLayer {
+    width: 28px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtOpacityLayer:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtOpacityLayer:focus {
+    border-bottom: 1px solid #647499;
+}
+
+
+
+.checkboxLayer {
+    outline: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: 1px solid #515E7B;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 8px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 6px;
+}
+
+.txtWidthLayer {
+    width: 32px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtWidthLayer:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtWidthLayer:focus {
+    border-bottom: 1px solid #647499;
+}
+
+.txtHeightLayer {
+    width: 32px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtHeightLayer:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtHeightLayer:focus {
+    border-bottom: 1px solid #647499;
+}
+
+.txtXLayer {
+    width: 32px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtXLayer:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtXLayer:focus {
+    border-bottom: 1px solid #647499;
+}
+
+.txtYLayer {
+    width: 32px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtYLayer:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtYLayer:focus {
+    border-bottom: 1px solid #647499;
+}
+
+.chkFlipX {
+    outline: none;
+    width: 24px;
+    max-width: 24px;
+    height: 16px;
+    border-radius: 99px;
+    border: 1px solid #3F4961;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 8px;
+    cursor: pointer;
+    display: flex;
+    padding-left: 2px;
+    padding-right: 2px;
+    transition: .2s;
+}
+
+.chkFlipY {
+    outline: none;
+    width: 24px;
+    max-width: 24px;
+    height: 16px;
+    border-radius: 99px;
+    border: 1px solid #3F4961;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 8px;
+    cursor: pointer;
+    display: flex;
+    padding-left: 2px;
+    padding-right: 2px;
+    transition: .2s;
+}
+
+.chkSwitch {
+    width: 12px;
+    height: 12px;
+    border-radius: 99px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #647499;
+    transition: .2s;
+}
+
+.txtTextColor {
+    width: 56px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border-radius: 3px;
+    border: 1px solid #343C4F;
+    background-color: transparent;
+    transition: border .2s;
+}
+
+.txtTextColor:hover {
+    border: 1px solid #515E7B;
+}
+
+.txtTextColor:focus {
+    border: 1px solid #647499;
+}
+
+
+.txtResizeText {
+    width: 32px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtResizeText:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtResizeText:focus {
+    border-bottom: 1px solid #647499;
+}
+
+
+.txtLetterSpacing {
+    width: 32px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtLetterSpacing:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtLetterSpacing:focus {
+    border-bottom: 1px solid #647499;
+}
+
+
+.txtLineHeight {
+    width: 32px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtLineHeight:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtLineHeight:focus {
+    border-bottom: 1px solid #647499;
+}
+
+.txtSubLayer {
+    width: 28px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtSubLayer:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtSubLayer:focus {
+    border-bottom: 1px solid #647499;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.txtVectorCornerRadius {
+    width: 28px;
+    height: 24px;
+    outline: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    transition: .2s;
+}
+
+.txtVectorCornerRadius:hover {
+    border-bottom: 1px solid #647499;
+}
+
+.txtVectorCornerRadius:focus {
+    border-bottom: 1px solid #647499;
+}
+
+.pnlDropSide {
+    height: 40px;
+    width: 42%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+

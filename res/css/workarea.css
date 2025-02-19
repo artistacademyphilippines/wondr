@@ -1,0 +1,470 @@
+#mainBox {
+    width: 100%;
+    min-width: 600px;
+    height: 100vh;
+    min-height: 600px;
+}
+
+#gap {
+    width: 4px;
+    min-width: 4px;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    background-color: #1E222B;
+}
+
+.headerUI {
+    width: 100%;
+    height: 46px;
+    max-height: 46px;
+    min-height: 46px;
+    background-color: #282F3D;
+    background-color: #181b20;
+    border-bottom: 1px solid #2c3344;
+    position: relative;
+    z-index: 1;
+}
+
+#bodyUI {
+    width: 100%;
+    height: 94.6%;
+    min-width: 600px;
+    display: flex;
+    
+    background-color: #1E222B;
+    /*
+    background-image: radial-gradient(#090A0D 5%, #1E222B 70%);
+    */
+}
+
+#workArea {
+    min-width: 41%;
+    width: calc(100% - 350px);
+    display: none;
+}
+
+#canvasBorder {
+    overflow: auto;
+    padding: 3em;
+    display: grid;
+    box-sizing: border-box;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    visibility: hidden;
+}
+
+#canvasBorder::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+#canvasBorder::-webkit-scrollbar-track {
+    background: #191d25;
+    border-radius: 99px;
+}
+
+#canvasBorder::-webkit-scrollbar-thumb {
+    background-color: #515E7B;
+    border-radius: 99px;
+}
+  
+#canvasBorder::-webkit-scrollbar-thumb:hover {
+    background-color: #647499;
+}
+
+#canvasBorder::-webkit-scrollbar-corner { 
+    background: transparent; 
+}
+
+#cnvTheme {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    height: 100%;
+    cursor: default !important; 
+    position: relative;
+}
+
+#cnvTheme svg {
+    width: 100%;
+    height: 100%;
+    filter: invert(1);
+    opacity: .2;
+}
+#cnvBox {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 1080px;
+    height: 1080px;
+    cursor: default !important; 
+    position: absolute;
+}
+
+#cnvMain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    box-sizing: border-box;
+    cursor: default !important;
+    background-color: white;
+}
+
+#cnvBG {
+    width: 100%;
+    height: 100%;
+    background-color: "white";
+    position: "absolute";
+}
+
+#cnvGrpLayers {
+    width: 100%;
+    height: 100%;
+    position: absolute;  
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.subMenu {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    z-index: 1;
+    position: relative;
+    background-color: #1E222B;
+    background-color: transparent;
+}
+
+#contZoom {
+    width: 210px;
+    height: 34px;
+    margin: auto;
+}
+
+.divZoom {
+    height: 32px;
+    margin: auto;
+    display: flex;
+    border-radius: 999px;
+    border: 1px solid #2c3344;
+    border: 1px solid #3F4961;
+    border: 1px solid #2E3646;
+    transition: .2s;
+    /*
+    background-image: linear-gradient(to bottom,#1B1E26 1%, #191D24 1%);
+    */
+    background-color: #1C2029;
+}
+
+#rngZoom {
+    -webkit-appearance: none;  
+    appearance: none;
+    width: 150px; 
+    height: 24px; 
+    border-radius: 99px;
+    outline: none; 
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 4px;
+    background: linear-gradient(to right, #2E3646 50%, transparent 50%);
+}
+
+#rngZoom::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 24px; 
+    height: 24px; 
+    background: #647499; 
+    border-radius: 99px;
+    cursor: pointer; 
+    transition: .2s;
+    z-index: 0;
+}
+
+#rngZoom::-webkit-slider-thumb:hover {
+    background: white; 
+}
+  
+#rngZoom::-moz-range-thumb {
+    width: 14px; 
+    height: 14px; 
+    background: #647499; 
+    border-radius: 99px;
+    cursor: pointer; 
+    transition: .2s;
+}
+
+#rngZoom::-moz-range-thumb:hover {
+    background: white; 
+}
+
+
+#dropdownZoom {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 4px;
+    margin-left: auto;
+    width: 42px;
+    height: 32px;
+    display: flex;
+    cursor: pointer;
+    border-top-right-radius: 99px;
+    border-bottom-right-radius: 99px;
+}
+
+#txtZoom {
+    margin: auto;
+    height: 32px;
+    width: 32px;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+}
+
+#txtZoom h2 {
+    color: #647499;
+    font-size: 12px;
+    font-weight: 500;
+    transition: .2s;
+    margin: auto;
+}
+
+
+.divZoom svg {
+    margin: auto;
+    width: 8px;
+    height: 6px;
+    transition: .2s;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard syntax */
+}
+
+.dropOptionZoom {
+    z-index: 1;
+    width: 60px;
+    height: auto;
+    max-height: 160px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 5px;
+    position: relative;
+    cursor: default;
+    margin-left: auto;
+    margin-top: 1px;
+    display: none;
+    background-color: #1E222B;
+    border: 1px solid #2E3646;
+    scroll-behavior: smooth;
+}
+
+.dropOptionZoom::-webkit-scrollbar {
+    width: 1px;
+}
+
+.dropOptionZoom::-webkit-scrollbar-thumb {
+    background-color: #6885CC;
+    border-radius: 99px;
+}
+  
+.dropOptionZoom::-webkit-scrollbar-thumb:hover {
+    background-color: #6885CC;
+}
+
+.dropOptionZoom::-webkit-scrollbar-corner { 
+    background: transparent; 
+}
+
+.optZoom {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none; 
+    background-color: transparent;
+}
+
+.optZoom:hover {
+    /*background-color: #2e374d; */
+    background-color: #6885CC;
+}
+
+.border {
+    width: 4px;
+    height: 100%;
+    position: relative;
+    background-color: #282F3D;
+    z-index: 1;
+}
+
+.footer {
+    width: 100%;
+    height: 4px;
+    position: relative;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #282F3D;
+    z-index: 1;
+}
+
+#rcCanvas {
+    width: 230px;
+    height: auto;
+    border-radius: 6px;
+    background-color: #1E222B;
+    background-color: #12141A;
+    cursor: default;
+    padding-top: .4em;
+    padding-bottom: .4em;
+    overflow: hidden;
+    outline: none;
+    position: absolute;
+    z-index: 5;
+    border: 1px solid rgba(255,255,255, 0.1);
+    box-shadow: 0px 0px 1px rgba(0,0,0, .5);
+    opacity: 0;
+    left: 100vw;
+}
+
+#rcCanvas2 {
+    width: 200px;
+    height: auto;
+    border-radius: 6px;
+    background-color: #1E222B;
+    cursor: default;
+    padding-top: .4em;
+    padding-bottom: .4em;
+    overflow: hidden;
+    outline: none;
+    position: absolute;
+    z-index: 5;
+    border: 1px solid rgba(255,255,255, 0.1);
+    box-shadow: 0px 0px 1px rgba(0,0,0, .5);
+    opacity: 0;
+    left: 100vw;
+}
+
+.rcOption {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none; 
+    background-color: transparent;
+}
+
+.rcOption:hover {
+    background-color: #6885CC;
+}
+
+.rcOption h2 {
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 6px;
+}
+
+.rcOptionRed {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none; 
+    background-color: transparent;
+}
+
+.rcOptionRed:hover {
+    background-color: salmon;
+}
+
+.rcOptionRed h2 {
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 6px;
+}
+
+.rcOptionExt {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none; 
+    background-color: transparent;
+}
+
+.rcOptionExt:hover {
+    background-color: #6885CC;
+}
+
+.rcOptionExt h2 {
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 6px;
+}
+
+.rcIcon {
+    width: 32px;
+    height: 32px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2px;
+    display: flex;
+}
+
+.rcIcon svg {
+    margin: auto;
+}
+
+.rcShortcut {
+    width: auto;
+    height: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 8px;
+    margin-left: auto;
+    display: flex;
+    border-radius: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: rgba(255,255,255, 0.05);
+}
+
+.rcShortcut h2 {
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin: auto;
+    font-weight: 400;
+}
+

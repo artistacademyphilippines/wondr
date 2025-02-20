@@ -315,9 +315,9 @@ async function removeBackground(img, leadPanel) {
         const response = await fetch('https://rembg-7i89v.ondigitalocean.app/', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
+                'Content-Type': 'text/plain',
             },
-            body: JSON.stringify({ image: img.src }),
+            body: img.src,
             timeout: 240000
         });
 
@@ -327,6 +327,8 @@ async function removeBackground(img, leadPanel) {
 
         const data = await response.json();
 
+        console.log(data)
+        /*
         let f = leadPanel.dataset.ref;
         let canvas = cnvGrpLayers.querySelector(`[data-ref="${f}"]`);
         let image = canvas.querySelector('img');
@@ -335,6 +337,7 @@ async function removeBackground(img, leadPanel) {
         image.onload = function() {
             canvas.style.visibility = "visible";
         }
+            */
     } catch (error) {
         console.error('Error:', error);
         alert('An error occurred while processing the image.');

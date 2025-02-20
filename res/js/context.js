@@ -312,12 +312,13 @@ function righClickText(e) {
 async function removeBackground(img, leadPanel) {
 
     try {
-        const response = await fetch('https://bgremover-theta.vercel.app/remove-bg', {
+        const response = await fetch('https://rembg-7i89v.ondigitalocean.app/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({ image: img.src }),
+            timeout: 240000
         });
 
         if (!response.ok) {
